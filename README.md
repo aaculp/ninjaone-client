@@ -1,12 +1,12 @@
-Installation:
+Installation: The below command will npm install in both the backend && cd into frontend and run npm install. 
 ------------
 
 ```bash
-$ npm install
+$ npm run build
 ```
 
 
-Run:
+Run: Run this command from the root folder, this will start your node server && cd frontend and start the frontend. Please pay attention to your console to see what port the frontend is running on -- 3000 vs 3001?
 ------------
 
 ```bash
