@@ -2,7 +2,6 @@
 
 // Libraries
 
-// import {Inter} from '@next/font/google'
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -17,11 +16,6 @@ import Modal from "../components/Modal";
 import { useNinjaOneContext } from "@/hooks/useNinjaOneContext";
 
 // Component
-
-// const inter = Inter({
-//   weight: ['400', '700'],
-//   subsets: ['latin']
-// })
 
 const StyledDevicesContainer = styled.div`
   align-items: center;

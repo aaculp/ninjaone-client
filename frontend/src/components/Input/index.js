@@ -1,6 +1,7 @@
 // Libraries
 
 import Image from "next/image";
+import React from 'react'
 import styled from "styled-components";
 
 // Dependencies
@@ -147,7 +148,7 @@ const Input = ({ type, sortingType }) => {
                 })
               }
             >
-              <option value="">Device Type: All</option>
+              <option value="" disabled selected>Device Type: All</option>
               {deviceTypeFilter &&
                 deviceTypeFilter.map((filter, index) => (
                   <option key={index} value={filter.toUpperCase()}>

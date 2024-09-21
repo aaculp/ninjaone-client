@@ -1,6 +1,8 @@
 "use client";
 
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
+
 import "./globals.css";
 import { NinajaOneProvider } from "@/state/context";
 
@@ -15,11 +17,17 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const inter = Inter({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+";z?"
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
         id="root"
       >
         <NinajaOneProvider>{children}</NinajaOneProvider>

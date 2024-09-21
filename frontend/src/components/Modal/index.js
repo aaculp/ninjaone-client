@@ -1,5 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+// Libraries
+
+import React from "react";
+import styled from "styled-components";
+
+// Component
 
 const ModalBackdrop = styled.div`
   position: fixed;
@@ -48,7 +52,7 @@ const Modal = ({ show, onClose, header, body, footer }) => {
     <ModalBackdrop onClick={onClose}>
       <ModalContainer onClick={(e) => e.stopPropagation()}>
         <ModalHeader>
-          <h4 style={{fontSize: '24px', fontWeight: 600}}>{header}</h4>
+          <h4 style={{ fontSize: "24px", fontWeight: 600 }}>{header}</h4>
           <CloseButton onClick={onClose}>&times;</CloseButton>
         </ModalHeader>
         <ModalBody>{body}</ModalBody>
