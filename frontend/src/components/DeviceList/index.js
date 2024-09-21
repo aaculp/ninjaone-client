@@ -171,7 +171,12 @@ export default function DeviceList() {
                   setOpenDialogId(device.id);
                 }}
               >
-                <Image alt="More Options" width={14} height={14} src={DOTS} />
+                <Image
+                  alt="Edit Delete Option"
+                  width={14}
+                  height={14}
+                  src={DOTS}
+                />
               </button>
 
               {openDialogId == device.id && showDialog && (
@@ -225,7 +230,13 @@ export default function DeviceList() {
         header="Edit Device"
         body={<Input type="modal" />}
         footer={
-          <div style={{ display: "flex", justifyContent: "flex-end", paddingTop: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              paddingTop: 20,
+            }}
+          >
             <button
               style={{ marginRight: "10px" }}
               onClick={() => {
@@ -276,7 +287,13 @@ export default function DeviceList() {
           </span>
         }
         footer={
-          <div style={{ display: "flex", justifyContent: "flex-end", paddingTop: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              paddingTop: 20,
+            }}
+          >
             <button
               style={{ marginRight: "10px" }}
               onClick={() => {

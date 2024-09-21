@@ -148,7 +148,7 @@ const Input = ({ type, sortingType }) => {
                 })
               }
             >
-              <option value="" disabled selected>Device Type: All</option>
+              <option value="" disabled defaultValue={"Device Type: All"}>Device Type: All</option>
               {deviceTypeFilter &&
                 deviceTypeFilter.map((filter, index) => (
                   <option key={index} value={filter.toUpperCase()}>

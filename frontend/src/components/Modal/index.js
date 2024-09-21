@@ -49,7 +49,7 @@ const Modal = ({ show, onClose, header, body, footer }) => {
   if (!show) return null;
 
   return (
-    <ModalBackdrop onClick={onClose}>
+    <ModalBackdrop data-testid="modal-backdrop" onClick={onClose}>
       <ModalContainer onClick={(e) => e.stopPropagation()}>
         <ModalHeader>
           <h4 style={{ fontSize: "24px", fontWeight: 600 }}>{header}</h4>

@@ -3,7 +3,6 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import Input from "../src/components/Input";
 import { useNinjaOneContext } from "../src/hooks/useNinjaOneContext";
 
-// Mock the context hook
 jest.mock("../src/hooks/useNinjaOneContext");
 
 const mockContext = {
