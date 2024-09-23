@@ -166,6 +166,7 @@ export default function DeviceList() {
 
             <div>
               <button
+                data-testid={`edit-delete-button-${device.id}`}
                 onClick={() => {
                   setShowDialog(!showDialog);
                   setOpenDialogId(device.id);

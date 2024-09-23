@@ -52,7 +52,7 @@ describe("DeviceList Component", () => {
   it("opens the more options menu when clicking the dots button", async () => {
     render(<DeviceList />);
 
-    const moreOptionsButton = screen.getByAltText(/Edit Delete Option/);
+    const moreOptionsButton = screen.getByTestId(`edit-delete-button-1`);
     const editBtn = screen.getByRole("button", { name: /edit/i });
     const deleteBtn = screen.getByRole("button", { name: /delete/i });
 
@@ -64,7 +64,7 @@ describe("DeviceList Component", () => {
   it("opens the edit modal when the edit button is clicked", async () => {
     render(<DeviceList />);
 
-    const moreOptionsButton = screen.getByAltText(/Edit Delete Option/);
+    const moreOptionsButton = screen.getByTestId(`edit-delete-button-1`);
     const editBtn = screen.getByRole("button", { name: /edit/i });
 
     await userEvent.click(moreOptionsButton);
@@ -78,7 +78,7 @@ describe("DeviceList Component", () => {
   it("opens the delete modal when the delete button is clicked", async () => {
     render(<DeviceList />);
 
-    const moreOptionsButton = screen.getByAltText(/Edit Delete Option/);
+    const moreOptionsButton = screen.getByTestId(`edit-delete-button-1`);
     const editBtn = screen.getByRole("button", { name: /edit/i });
     const deleteBtn = screen.getByRole("button", { name: /delete/i });
 
